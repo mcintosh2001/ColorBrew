@@ -5,4 +5,4 @@ Met color brewer
 ![plot](./panel1.tiff)
 
 ColorBrewer
-![plot](./panel1.tiff)
+![plot](./panel2.tiff)
