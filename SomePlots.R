@@ -54,8 +54,29 @@ p6 <- ggplot(data=iris, aes(x=Species, y=Petal.Length, fill=Species)) +
   scale_fill_manual(values=met.brewer("Cassatt1", 3)) +
   My_Theme
 
+p7 <- ggplot(data=iris, aes(x=Species, y=Petal.Length, fill=Species)) +
+  geom_violin() +
+  labs(title = "Hiroshige") +
+  scale_fill_manual(values=met.brewer("Hiroshige", 3)) +
+  My_Theme
+
+p8 <- ggplot(data=iris, aes(x=Species, y=Petal.Length, fill=Species)) +
+  geom_violin() +
+  labs(title = "OKeeffe2") +
+  scale_fill_manual(values=met.brewer("OKeeffe2", 3)) +
+  My_Theme
+
+p9 <- ggplot(data=iris, aes(x=Species, y=Petal.Length, fill=Species)) +
+  geom_violin() +
+  labs(title = "OKeeffe1") +
+  scale_fill_manual(values=met.brewer("OKeeffe1", 3)) +
+  My_Theme
+
 # cowplot command
-panel1 <- plot_grid(p1, p2, p3, p4, p5, p6, nrow=2, ncol=3, labels = c('A', 'B','C','D','E','F'), label_size = 12)
+panel1 <- plot_grid(p1, p2, p3, p4, p5, p6, p7, p8, p9,
+ncol=3, labels = c('A', 'B','C','D','E','F'),
+label_size = 12)
+
 ggsave("panel1.tiff")
 
 rm(list = c(paste("p",c(1:6),sep="")))  
