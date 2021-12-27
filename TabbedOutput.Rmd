@@ -1,0 +1,33 @@
+---
+title: "Tabbed output"
+author: "Andrew M McIntosh"
+date: "27/12/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+```{r}
+source("SomePlots.R")
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+## Results {.tabset}
+
+### Output MetColorBrewer
+```{r}
+panel1
+```
+
+### Output ColorBrewer
+```{r}
+panel2
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

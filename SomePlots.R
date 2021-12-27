@@ -6,7 +6,7 @@ library(RColorBrewer)
 devtools::install_github("BlakeRMills/MetBrewer") 
 require("MetBrewer")
 
-rm(list = c(paste("p",c(1:12),sep="")))
+# rm(list = c(paste("p",c(1:12),sep="")))
 
 My_Theme = theme(
   axis.title.x = element_text(size = 10),
@@ -40,9 +40,9 @@ panel1 <- plot_grid(p1, p2, p3, p4, p5, p6, p7, p8, p9,
 ncol=3, labels = c('A', 'B','C','D','E','F'),
 label_size = 12)
 
-ggsave("panel1.tiff")
-rm(list = c(paste("p",c(1:6),sep="")))  
-rm(panel1)
+# ggsave("panel1.tiff")
+# rm(list = c(paste("p",c(1:6),sep="")))  
+# rm(panel1)
 
 # RColorBrewer
 
@@ -64,6 +64,6 @@ p6 <- myplot1("YlOrRd")
 
 # cowplot command
 panel2 <- plot_grid(p1, p2, p3, p4, p5, p6, ncol=3, labels = c('A', 'B','C','D','E','F'), label_size = 12)
-ggsave("panel2.tiff")
-rm(list = c(paste("p",c(1:6),sep="")))  
-rm(panel2)
+# ggsave("panel2.tiff")
+# rm(list = c(paste("p",c(1:6),sep="")))  
+# rm(panel2)
