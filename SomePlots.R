@@ -1,10 +1,10 @@
-require("tidyverse")
-require("ggplot2")
-require("cowplot")
-library(RColorBrewer)
+require("tidyverse", quietly = TRUE, warn.conflicts = FALSE)
+require("ggplot2", quietly = TRUE, warn.conflicts = FALSE)
+require("cowplot", quietly = TRUE, warn.conflicts = FALSE)
+require("RColorBrewer", quietly = TRUE, warn.conflicts = FALSE)
 
-devtools::install_github("BlakeRMills/MetBrewer") 
-require("MetBrewer")
+# devtools::install_github("BlakeRMills/MetBrewer") 
+require("MetBrewer", quietly = TRUE, warn.conflicts = FALSE)
 
 # rm(list = c(paste("p",c(1:12),sep="")))
 

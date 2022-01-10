@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## R Markdown
 ```{r}
-source("SomePlots.R")
+source("SomePlots.R", echo = FALSE)
 ```
 
 ## Including Plots
@@ -21,11 +21,13 @@ You can also embed plots, for example:
 ## Results {.tabset}
 
 ### Output MetColorBrewer
+Plots generated using the new MetColorBrewer package, downloaded from GitHub. Schemes generated using paintings in the Metropolital Museum of Art in NYC
 ```{r}
 panel1
 ```
 
 ### Output ColorBrewer
+Plots generated using the new ColorBrewer package, downloaded from CRAN 
 ```{r}
 panel2
 ```
